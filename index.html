@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Налаштування поведінки в'юпорта -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 25</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="page_lessons">
+				<div class="lesson-table">
+					<div class="lesson_first">
+						<div class="stowp">JavaScript Document object model (DOM) за час.</div>
+						<div class="tab-one">
+							<p class="check"> Варіант №1 - let hi = document.querySelector('[data-say-hi]'); console.log(hi);. </p>
+							<p class="check"> Варіант №2 - виконано. </p>
+							<p class="check"> Варіант №3 - виконано. </p>
+							<p class="check"> Варіант №4 - Нікуди бо ця функція викликає помилку.. </p>
+						</div>
+					</div>
+				<div class="lesson_example"> Завдання із Document Object Model. <div data-say-hi="yes">Привіт!</div>
+					<ul>
+						<li>Корчи</li>
+						<li>Йончи</li>
+					</ul>
+					<div class="like"></div>
+					<div class="subscribe"></div>
+					<div class="like subscribe"></div>
+					<ul>
+						<li>Пункт №1</li>
+						<li>Пункт №2</li>
+						<li>Пункт №3</li>
+						<li>Текст</li>
+					</ul>
+				</div>
+
+				<div class="lesson_second">
+					<div class="stowp">JAVASCRIFT разміри Прокрутка и координаты элементов.</div>
+					<div class="tab-two">
+						<p class="check"> Варіант №1 - виконано. </p>
+						<p class="check"> Варіант №2 - виконано. </p>
+						<p class="check"> Варіант №3 - виконано. </p>
+					</div>
+				</div>
+
+				<button type="button" class="button">Собитія</button>
+
+				<div class="lesson_third">
+					<div class="stowp">JAVASCRIPT СОБИТІЯ.</div>
+					<div class="tab-three">
+						<p class="check">
+							const formBody = document.querySelector(".form"); 
+							
+							document.addEventListener('click', form); 
+
+							function form(event){ 
+								if(event.target.closest('.button')) {
+						      formBody.classList.toggle('active');
+						 } 
+
+					if(!event.target.closest('form')){ 
+						formBody.classList.remove('active');
+					} 
+						 
+					 document.addEventListener('keyup', function(event){
+						 if (event.code === 'Escape') { 
+						 formBody.classList.remove('active');
+						    }
+						 })
+			        }
+						</p>
+					</div>
+				</div>
+			</div>
+		 </div>
+
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+   </html>
